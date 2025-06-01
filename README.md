@@ -49,5 +49,6 @@ Run it using BAT1K.R file. Additional data prepocessing steps might be required.
 
 # TODO
 1. Docker version
-2. Single pipeline file for server usage
-3. Tests folder
+2. Requirements.txt
+3. Single pipeline file for server usage
+4. Tests folder
