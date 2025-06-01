@@ -33,15 +33,15 @@ Trees should be labeled for each protein so that HYPHY understands phylogeny whe
 Scheme for the pipeline:
 ![alt text](https://github.com/Malaevleo/bat_project/blob/main/pipeline%20adj.jpg "Pipeline Scheme")
 
-First step of the dN/dS analysis is BUSTED-E as it is the most robust tool for gene-level positive selection identification yet. Initially we run analysis on the Foreground (**run_bustede1.sh**), then, for genes experiencing positive selection, we run BUSTED-E on the Background branches (**run_bustede2.sh**) in order to check whether this event also happens within the gene on the other branches of the tree. 
+First step of the dN/dS analysis is BUSTED-E as it is the most robust tool for gene-level positive selection identification yet. Initially we run analysis on the Foreground (```run_bustede1.sh```), then, for genes experiencing positive selection, we run BUSTED-E on the Background branches (```run_bustede2.sh```) in order to check whether this event also happens within the gene on the other branches of the tree. 
 
-Resulting logs are analyzed in the pipeline.ipynb with applied FDR correction. Genes undergoing positive selection can later be used for the other steps of the pipeline. You can copy only significant ones into other folder (and, if you want, delete existing one that will become obsolete after this step) using **copy_sig.sh**.
+Resulting logs are analyzed in the pipeline.ipynb with applied FDR correction. Genes undergoing positive selection can later be used for the other steps of the pipeline. You can copy only significant ones into other folder (and, if you want, delete existing one that will become obsolete after this step) using ```copy_sig.sh```.
 
-After finding out which genes experience positive selection we can double-check our prediction using BUSTED-PH. To run BUSTED-PH use **run_bustedph.sh**. If you have little time or severely limited computational resources, you can skip this part.
+After finding out which genes experience positive selection we can double-check our prediction using BUSTED-PH. To run BUSTED-PH use ```run_bustedph.sh```. If you have little time or severely limited computational resources, you can skip this part.
 
-To find out at which branches positive selection happened we can employ branch-level model such as aBSREL. To run aBSREL use **run_absrel.sh**.
+To find out at which branches positive selection happened we can employ branch-level model such as aBSREL. To run aBSREL use ```run_absrel.sh```.
 
-In order to obtain 'root-to-tip' $\frac{dN}{dS}$ values suitable for the PGLS analysis we have to run FitMG94 with ```--type lineage``` option. To run FitMG94 use **run_mg94.sh**. 
+In order to obtain 'root-to-tip' $\frac{dN}{dS}$ values suitable for the PGLS analysis we have to run FitMG94 with ```--type lineage``` option. To run FitMG94 use ```run_mg94.sh```. 
 
 # PGLS
 
