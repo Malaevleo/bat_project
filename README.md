@@ -46,3 +46,8 @@ In order to obtain 'root-to-tip' $\frac{dN}{dS}$ values suitable for the PGLS an
 # PGLS
 
 Run it using BAT1K.R file. Additional data prepocessing steps might be required.
+
+# TODO
+1. Docker version
+2. Single pipeline file for server usage
+3. Tests folder
