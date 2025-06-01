@@ -1,5 +1,6 @@
 # bat_project
 
+![alt text](https://github.com/Malaevleo/bat_project/blob/main/pipeline%20adj.jpg "Pipeline Scheme")
 
 Blastp results for human matrisome against genome of Myotis Myotis (resultsmyofiltered.txt): 
 
