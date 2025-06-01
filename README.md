@@ -41,7 +41,7 @@ After finding out which genes experience positive selection we can double-check 
 
 To find out at which branches positive selection happened we can employ branch-level model such as aBSREL. To run aBSREL use **run_absrel.sh**.
 
-In order to obtain 'root-to-tip' $\frac{dN}{dS}$ values suitable for the PGLS analysis we have to run FitMG94 with ```--type lineage``` option. To run FitMG94 use run_mg94.sh. 
+In order to obtain 'root-to-tip' $\frac{dN}{dS}$ values suitable for the PGLS analysis we have to run FitMG94 with ```--type lineage``` option. To run FitMG94 use **run_mg94.sh**. 
 
 # PGLS
 
