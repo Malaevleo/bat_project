@@ -22,8 +22,8 @@ In order to continue analysis we have to create separate files for each protein 
 
 **Alignment using MACSE and conversion using PAL2NAL**
 
-MACSE is an essential part as it creates proper alignments while accounting for codon structure of genes. \
-PAL2NAL is used to convert MACSE alignments into proper codon alignments suitable for the $\frac{dN}{dS}$ analysis.
+MACSE is an essential part as it creates proper alignments while accounting for codon structure of genes. To use it run the script ```run_macse.sh```. \
+PAL2NAL is used to convert MACSE alignments into proper codon alignments suitable for the $\frac{dN}{dS}$ analysis. To use it run the script ```run_pal2nal.sh```.
 
 **Trees pruning and labeling**
 Trees should be labeled for each protein so that HYPHY understands phylogeny when analysing each gene. Foreground and background branches should also be labeled. In our case foreground branches were the ones with long-living bats.
