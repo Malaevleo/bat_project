@@ -28,7 +28,7 @@ for CODON_FILE in "$PAL2NAL_OUTPUT_DIR"/*.fasta; do
             continue
         fi
 
-        echo "Running BUSTED for $CODON_FILE with tree $TREE_FILE..."
+        echo "Running MG94 for $CODON_FILE with tree $TREE_FILE..."
         $HYPHY_CMD --alignment "$CODON_FILE" --tree "$TREE_FILE" --type lineage --output "$OUTPUT_FILE" > "$LOG_FILE" 2>&1
 
         if [ $? -eq 0 ]; then
