@@ -31,6 +31,7 @@ Trees should be labeled for each protein so that HYPHY understands phylogeny whe
 # dN/dS HYPHY
 
 Scheme for the pipeline:
+![alt text](https://drive.google.com/file/d/1y9A-IGygYRnczKNW9mxuz5XPWgBm1V9j/view?usp=sharing "Pipeline Scheme")
 ![alt text](https://github.com/Malaevleo/bat_project/blob/main/pipeline%20adj.jpg "Pipeline Scheme")
 
 First step of the dN/dS analysis is BUSTED-E as it is the most robust tool for gene-level positive selection identification yet. Initially we run analysis on the Foreground (```run_bustede1.sh```), then, for genes experiencing positive selection, we run BUSTED-E on the Background branches (```run_bustede2.sh```) in order to check whether this event also happens within the gene on the other branches of the tree. 
